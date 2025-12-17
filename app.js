@@ -279,10 +279,10 @@ function setupKeyHandling() {
         
         if (!isMenuVisible) {
             switch (keyCode) {
-                case KEY_CODE_RIGHT: 
                 case KEY_CODE_LEFT: 
+                case KEY_CODE_RIGHT: 
                     event.preventDefault(); 
-                    (keyCode === KEY_CODE_RIGHT ? previousPage() : nextPage());
+                    (keyCode === KEY_CODE_LEFT ? previousPage() : nextPage());
                     break;
                 case KEY_CODE_UP: 
                     event.preventDefault();
@@ -302,4 +302,3 @@ function setupKeyHandling() {
         
     });
 }
-
