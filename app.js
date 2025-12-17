@@ -16,7 +16,7 @@ function getPageFileName(pageNumber) {
     while (paddedNumber.length < 3) {
         paddedNumber = '0' + paddedNumber;
     }
-    return 'pages/page_' + paddedNumber + '.png'; 
+    return 'pages/page_' + paddedNumber + '.jpg'; 
 }
 
 // 3. دالة عرض الصفحة
@@ -301,5 +301,4 @@ function setupKeyHandling() {
         }
         
     });
-
 }
