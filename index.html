@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المصحف - WebOS</title>
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body tabindex="0">
+
+<body tabindex="-1">
+
+    <!-- Focus Trap لحبس مؤشر التلفزيون -->
+    <div id="tv-focus-trap" tabindex="0"></div>
 
     <div id="side-menu" class="hidden">
         <div id="menu-content">
@@ -15,12 +19,9 @@
             <button class="menu-item" data-action="juz">الانتقال إلى جزء</button>
             <button class="menu-item" data-action="page">الانتقال إلى صفحة</button>
         </div>
-        
-        <div id="sub-menu-container">
-            </div>
-        
-        <div id="dialog-container">
-            </div>
+
+        <div id="sub-menu-container"></div>
+        <div id="dialog-container"></div>
     </div>
 
     <div id="quran-page-container">
@@ -28,6 +29,6 @@
     </div>
 
     <script src="data.js"></script>
-    <script src="app.js"></script> 
+    <script src="app.js"></script>
 </body>
 </html>
